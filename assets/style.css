@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -35,6 +44,13 @@ header {
   justify-content: center;
   flex-wrap: wrap-reverse;
   gap: 0px 55px; */
+}
+
+h1,
+h2 {
+  color: #742305;
+  margin-block: 2rem 1rem;
+  font-size: 34px;
 }
 
 .button {
@@ -98,9 +114,98 @@ header {
   margin-bottom: 1rem;
 }
 
-section {
+#products {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 25px 0px;
+}
+
+article {
+  background-color: #f1ebcd;
+  padding: 1rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+article h4 {
+  color: #742305;
+  font-weight: 800;
+}
+
+article img {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  #navBar {
+    min-width: 200px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .shop {
+    order: 1;
+    margin-top: 1rem;
+  }
+  .our {
+    order: 2;
+    height: 70px;
+    width: 135px;
+  }
+  .trace {
+    order: 3;
+    height: 70px;
+    width: 135px;
+  }
+  .facil {
+    order: 4;
+    height: 70px;
+    width: 135px;
+  }
+  .contacts {
+    order: 5;
+    height: 70px;
+    width: 135px;
+  }
+
+  #desktop {
+    display: flex;
+  }
+
+  h1 {
+    margin-block: 1rem;
+  }
+
+  main {
+    margin-inline: 2rem;
+  }
+
+  .card {
+    max-width: 200px;
+    min-height: 200px;
+  }
+
+  .cardText {
+    gap: 0px;
+  }
+
+  article {
+    flex-direction: row;
+    gap: 0px 10px;
+  }
+
+  article img {
+    order: 1;
+  }
+
+  article > div {
+    order: 2;
+  }
+
+  #products {
+    justify-content: space-evenly;
+  }
 }
